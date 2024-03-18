@@ -1,1 +1,1 @@
-export { default } from "./NFTview";
+export { default } from "./NFTView";

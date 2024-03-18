@@ -9,8 +9,14 @@ const config: Config = {
 	theme: {
 		extend: {
 			colors: {
-				main: "#FF88E6",
-				accent: "#22A093",
+				mainBg: "#f2f2f2",
+				navBarBg: "black",
+				textColor: "black",
+				sunsetDark: "#792602",
+				sunsetDarker: "#FF5101",
+				sunsetDarkish: "#E35000",
+				sunsetLight: "#FFA301",
+				sunsetLighter: "#FFDB7C",
 			},
 		},
 	},
