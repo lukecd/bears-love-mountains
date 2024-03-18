@@ -30,26 +30,14 @@ const Hero: React.FC<HeroProps> = ({ navbarMode }) => {
 
 	return (
 		<div
-			className={`text-8xl flex items-center justify-center w-full px-4 py-2 ${
+			className={`text-xl lg:text-8xl flex items-center justify-center w-full px-4 py-2 ${
 				isSticky ? "text-xl fixed top-0 z-50" : "relative"
 			} bg-main transition-all duration-500 ease-in-out`}
 		>
 			<div className="text-center w-full leading-none">
-				{isSticky && (
-					<>
-						<h1 className={`lexend-mega-900 text-bold text-accent`}>
-							<a className="cursor-pointer" onClick={goBack}>
-								BEARS LOVE MOUNTAINS
-							</a>
-						</h1>
-					</>
-				)}
-				{!isSticky && (
-					<>
-						<h1 className={`lexend-mega-300 text-bold text-accent`}>BEARS LOVE</h1>
-						<h1 className={`lexend-mega-300 text-bold text-accent`}>MOUNTAINS</h1>
-					</>
-				)}
+				<>
+					<h1 className={`lexend-mega-300 text-bold text-accent`}>BEARS LOVE MOUNTAINS</h1>
+				</>
 			</div>
 		</div>
 	);

@@ -26,7 +26,10 @@ const NFTsmall: React.FC<NFTsmallProps> = ({ id, mainColor, accentColor }) => {
 				onClick={showNFT}
 			/>
 			<div className="w-full mt-1 rounded-md pr-2 pb-1">
-				<h1 className={`lexend-mega-900 mt-3 text-right text-xl font-bold`} style={{ color: mainColor }}>
+				<h1
+					className={`lexend-mega-500 mt-3 text-right lg:text-xl text-sm leading-none font-bold`}
+					style={{ color: mainColor }}
+				>
 					Bears Love Mountains #{id}
 				</h1>
 			</div>
