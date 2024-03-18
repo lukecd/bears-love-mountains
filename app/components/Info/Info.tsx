@@ -42,6 +42,118 @@ const Info: React.FC<InfoProps> = ({ id, mainColor, accentColor }) => {
 				</div>
 			);
 			break;
+		case 3:
+			content = (
+				<div style={style} className="flex flex-col w-1/4 justify-center items-start p-3">
+					<p className="leading-none">In the mountain mist,</p>
+					<p className="leading-none">Bear inhales nature{"'"}s calm breeze,</p>
+					<p className="leading-none">Peace in every puff</p>
+					<p className="leading-none mt-3">-Mountain Bear</p>
+				</div>
+			);
+			break;
+		case 4:
+			content = (
+				<div style={style} className="flex flex-col w-1/4 justify-end items-end p-3">
+					<p className="leading-none">Summit{"'"}s silent song,</p>
+					<p className="leading-none">Solitude whispers wisdom,</p>
+					<p className="leading-none">Soul feasts on the calm.</p>
+					<p className="leading-none mt-3">-Mountain Bear</p>
+				</div>
+			);
+			break;
+		case 5:
+			content = (
+				<div style={style} className="flex flex-col w-1/4 justify-center items-center p-3">
+					<p className="leading-none">River{"'"}s gentle flow,</p>
+					<p className="leading-none">
+						Nature{"'"}s breath, a soul{"'"}s repose,
+					</p>
+					<p className="leading-none">Peace where wildflowers grow.</p>
+					<p className="leading-none mt-3">-Mountain Bear</p>
+				</div>
+			);
+			break;
+		case 6:
+			content = (
+				<div style={style} className="flex flex-col w-1/4 justify-end items-end p-3">
+					<p className="leading-none">Forest{"'"}s emerald heart,</p>
+					<p className="leading-none">Solitude{"'"}s sanctuary,</p>
+					<p className="leading-none">Nature heals, imparts.</p>
+					<p className="leading-none mt-3">-Mountain Bear</p>
+				</div>
+			);
+			break;
+		case 7:
+			content = (
+				<div style={style} className="flex flex-col w-1/4 justify-center items-start p-3">
+					<p className="leading-none">Dawn{"'"}s first light on peaks,</p>
+					<p className="leading-none">Mountains{"'"} solitude beckons,</p>
+					<p className="leading-none">In silence, soul speaks.</p>
+					<p className="leading-none mt-3">-Mountain Bear</p>
+				</div>
+			);
+			break;
+		case 8:
+			content = (
+				<div style={style} className="flex flex-col w-1/4 justify-center items-center p-3">
+					<p className="leading-none">Cascades{"'"} melody,</p>
+					<p className="leading-none">Nature{"'"}s refreshment, pure, clear,</p>
+					<p className="leading-none">Solitude{"'"}s key, free.</p>
+					<p className="leading-none mt-3">-Mountain Bear</p>
+				</div>
+			);
+			break;
+		case 9:
+			content = (
+				<div style={style} className="flex flex-col w-1/4 justify-center items-center p-3">
+					<p className="leading-none">Alpine twilight fades,</p>
+					<p className="leading-none">Solitude in every hue,</p>
+					<p className="leading-none">Nature{"'"}s beauty aids.</p>
+					<p className="leading-none mt-3">-Mountain Bear</p>
+				</div>
+			);
+			break;
+		case 10:
+			content = (
+				<div style={style} className="flex flex-col w-1/4 justify-center items-center p-3">
+					<p className="leading-none">Stars over stone spires,</p>
+					<p className="leading-none">Only in nature{"'"}s embrace,</p>
+					<p className="leading-none">Soul finds what it desires.</p>
+					<p className="leading-none mt-3">-Mountain Bear</p>
+				</div>
+			);
+			break;
+		case 11:
+			content = (
+				<div style={style} className="flex flex-col w-1/4 justify-center items-center p-3">
+					<p className="leading-none">Frost kisses the pine,</p>
+					<p className="leading-none">Mountain{"'"}s breath, a tranquil balm,</p>
+					<p className="leading-none">Solitude divine.</p>
+					<p className="leading-none mt-3">-Mountain Bear</p>
+				</div>
+			);
+			break;
+		case 12:
+			content = (
+				<div style={style} className="flex flex-col w-1/4 justify-center items-center p-3">
+					<p className="leading-none">Path through ancient woods,</p>
+					<p className="leading-none">Solitude{"'"}s journey inward,</p>
+					<p className="leading-none">Nature{"'"}s quiet goods.</p>
+					<p className="leading-none mt-3">-Mountain Bear</p>
+				</div>
+			);
+			break;
+		case 13:
+			content = (
+				<div style={style} className="flex flex-col w-1/4 justify-center items-center p-3">
+					<p className="leading-none">Moonlit valley{"'"}s call,</p>
+					<p className="leading-none">In solitude, find your peace,</p>
+					<p className="leading-none">Nature cradles all.</p>
+					<p className="leading-none mt-3">-Mountain Bear</p>
+				</div>
+			);
+			break;
 		default:
 			content = (
 				<div style={style} className="flex flex-col w-1/4 justify-center items-center p-3">

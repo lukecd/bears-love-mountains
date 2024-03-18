@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
+import { useRouter } from "next/navigation";
 
 interface HeroProps {
 	navbarMode?: boolean; // Indicates if Hero starts in navbar mode
@@ -7,6 +8,7 @@ interface HeroProps {
 
 const Hero: React.FC<HeroProps> = ({ navbarMode }) => {
 	const [isSticky, setIsSticky] = useState(navbarMode || false);
+	const router = useRouter();
 
 	useEffect(() => {
 		if (!navbarMode) {
@@ -22,6 +24,10 @@ const Hero: React.FC<HeroProps> = ({ navbarMode }) => {
 		}
 	}, [navbarMode]);
 
+	const goBack = () => {
+		router.back();
+	};
+
 	return (
 		<div
 			className={`text-8xl flex items-center justify-center w-full px-4 py-2 ${
@@ -31,7 +37,11 @@ const Hero: React.FC<HeroProps> = ({ navbarMode }) => {
 			<div className="text-center w-full leading-none">
 				{isSticky && (
 					<>
-						<h1 className={`font-bold text-accent`}>BEARS LOVE MOUNTAINS</h1>
+						<h1 className={`font-bold text-accent`}>
+							<a className="cursor-pointer" onClick={goBack}>
+								BEARS LOVE MOUNTAINS
+							</a>
+						</h1>
 					</>
 				)}
 				{!isSticky && (

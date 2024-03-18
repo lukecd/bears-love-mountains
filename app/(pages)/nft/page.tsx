@@ -4,7 +4,7 @@ import NFTView from "../../components/NFTView"; // Import NFTView component
 
 const Page = () => {
 	return (
-		<div>
+		<div className=" bg-accent">
 			{/* <Hero navbarMode={true} /> Pass a prop to indicate navbar mode */}
 			<NFTView />
 		</div>

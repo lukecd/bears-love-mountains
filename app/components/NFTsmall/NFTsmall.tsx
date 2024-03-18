@@ -3,26 +3,31 @@ import React, { useState } from "react";
 import { useRouter } from "next/navigation";
 
 interface NFTsmallProps {
+	id: number;
 	mainColor: string;
 	accentColor: string;
 }
 
-const NFTsmall: React.FC<NFTsmallProps> = ({ mainColor, accentColor }) => {
-	const [id] = useState(1); // Assuming `id` might be passed or determined dynamically in the future
+const NFTsmall: React.FC<NFTsmallProps> = ({ id, mainColor, accentColor }) => {
 	const router = useRouter();
-
 	const showNFT = () => {
 		router.push(`/nft?id=${id}`);
 	};
 
 	return (
-		<div className={`flex flex-col w-1/4 justify-center items-center text-white bg-white p-3 pb-10`}>
+		<div className={`flex flex-col w-1/4 justify-center items-center text-white bg-white p-3 pb-5 shadow-md `}>
 			<img
-				src="/mountain.png"
+				src={`/mountain-${id + 1}.jpg`}
 				alt="NFT"
-				className={`h-auto hover:scale-105 transition-transform duration-300 cursor-pointer`}
+				className={`h-auto hover:scale-105 transition-transform duration-300 cursor-pointer shadow-md rounded-lg `}
 				onClick={showNFT}
 			/>
+			<h1
+				className="mt-3 text-right text-xl font-bold"
+				style={{ color: mainColor, textShadow: `2px 2px ${accentColor}` }}
+			>
+				Bears Love Mountains #{id}
+			</h1>
 		</div>
 	);
 };

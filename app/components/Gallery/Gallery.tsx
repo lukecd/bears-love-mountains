@@ -8,18 +8,23 @@ const borderColors: string[] = ["sunsetDark", "sunsetDarker", "sunsetDarkish", "
 
 const Gallery: React.FC = () => {
 	const [components, setComponents] = useState<React.ReactNode[]>([]);
-	const mainColors = ["#E24330", "#8C262E", "#90A9EE", "#FF88E6", "#98282B", "#E24330", "#EFF330", "#22A093"];
-	const accentColors = ["#FEC901", "#FF7B02", "#F0F22F", "#22A093", "#FE91E7", "#FE91E7", "#22A093", "#FEC901"];
+	const mainColors = ["#E24330", "#8C262E", "#90A9EE", "#98282B", "#E24330", "#EFF330", "#22A093"];
+	const accentColors = ["#FEC901", "#FF7B02", "#F0F22F", "#FE91E7", "#FE91E7", "#22A093", "#FEC901"];
 
 	useEffect(() => {
 		const items: React.ReactNode[] = Array.from({ length: 42 }).map((_, index) => {
 			const colorIndex = Math.floor(Math.random() * mainColors.length);
 			return (
-				<NFTsmall key={`nft-${index}`} mainColor={mainColors[colorIndex]} accentColor={accentColors[colorIndex]} />
+				<NFTsmall
+					key={`nft-${index}`}
+					id={index}
+					mainColor={mainColors[colorIndex]}
+					accentColor={accentColors[colorIndex]}
+				/>
 			);
 		});
 
-		const positions = [2, 3, 7];
+		const positions = [2, 3, 7, 12, 17, 19, 22, 15, 28, 31, 33, 39, 42, 55];
 		positions.forEach((position, i) => {
 			const colorIndex = Math.floor(Math.random() * mainColors.length);
 			items.splice(
