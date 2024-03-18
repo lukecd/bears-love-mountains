@@ -4,8 +4,6 @@ import React, { useState, useEffect } from "react";
 import NFTsmall from "../NFTsmall";
 import Info from "../Info";
 
-const borderColors: string[] = ["sunsetDark", "sunsetDarker", "sunsetDarkish", "sunsetLight", "sunsetLighter"];
-
 const Gallery: React.FC = () => {
 	const [components, setComponents] = useState<React.ReactNode[]>([]);
 	const mainColors = ["#E24330", "#8C262E", "#90A9EE", "#98282B", "#E24330"];
