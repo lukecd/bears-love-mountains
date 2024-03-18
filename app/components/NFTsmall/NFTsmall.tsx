@@ -13,37 +13,25 @@ const NFTsmall: React.FC<NFTsmallProps> = ({ id, mainColor, accentColor }) => {
 	const showNFT = () => {
 		router.push(`/nft?id=${id}`);
 	};
-
+	console.log({ accentColor });
 	return (
-		<div className={`flex flex-col w-1/4 justify-center items-center text-white bg-white p-3 pb-5 shadow-md `}>
+		<div
+			style={{ backgroundColor: accentColor }}
+			className={`flex flex-col w-1/4 justify-center items-center text-white bg-${accentColor} p-3 pb-5 shadow-md `}
+		>
 			<img
-				src={`/mountain-${id + 1}.jpg`}
+				src={`/bearslovemountains-${id + 1}.png`}
 				alt="NFT"
 				className={`h-auto hover:scale-105 transition-transform duration-300 cursor-pointer shadow-md rounded-lg `}
 				onClick={showNFT}
 			/>
-			<h1
-				className="mt-3 text-right text-xl font-bold"
-				style={{ color: mainColor, textShadow: `2px 2px ${accentColor}` }}
-			>
-				Bears Love Mountains #{id}
-			</h1>
+			<div className="w-full mt-1 rounded-md pr-2 pb-1">
+				<h1 className={`lexend-mega-900 mt-3 text-right text-xl font-bold`} style={{ color: mainColor }}>
+					Bears Love Mountains #{id}
+				</h1>
+			</div>
 		</div>
 	);
 };
 
 export default NFTsmall;
-
-// <div className={`flex flex-col w-1/4 justify-center items-center p-3 bg-[${mainColor}]`}>
-// {/* Outer div with mainColor as background */}
-// <div className="bg-white m-3 p-3">
-// 	{/* White inset div */}
-// 	<img
-// 		src="/mountain.png"
-// 		alt="NFT"
-// 		className={`h-auto hover:scale-105 transition-transform duration-300 border-8 border-[${accentColor}] cursor-pointer`}
-// 		onClick={showNFT}
-// 		style={{ borderColor: accentColor }} // Using inline styles for dynamic border color
-// 	/>
-// </div>
-// </div>

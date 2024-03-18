@@ -8,8 +8,8 @@ const borderColors: string[] = ["sunsetDark", "sunsetDarker", "sunsetDarkish", "
 
 const Gallery: React.FC = () => {
 	const [components, setComponents] = useState<React.ReactNode[]>([]);
-	const mainColors = ["#E24330", "#8C262E", "#90A9EE", "#98282B", "#E24330", "#EFF330", "#22A093"];
-	const accentColors = ["#FEC901", "#FF7B02", "#F0F22F", "#FE91E7", "#FE91E7", "#22A093", "#FEC901"];
+	const mainColors = ["#E24330", "#8C262E", "#90A9EE", "#98282B", "#E24330"];
+	const accentColors = ["#FEC901", "#FF7B02", "#F0F22F", "#FE91E7", "#FE91E7"];
 
 	useEffect(() => {
 		const items: React.ReactNode[] = Array.from({ length: 42 }).map((_, index) => {
@@ -24,7 +24,7 @@ const Gallery: React.FC = () => {
 			);
 		});
 
-		const positions = [2, 3, 7, 12, 17, 19, 22, 15, 28, 31, 33, 39, 42, 55];
+		const positions = [2, 3, 7, 12, 17, 19, 22, 15, 17, 28, 31, 33, 39, 42, 55];
 		positions.forEach((position, i) => {
 			const colorIndex = Math.floor(Math.random() * mainColors.length);
 			items.splice(
@@ -37,7 +37,7 @@ const Gallery: React.FC = () => {
 		setComponents(items);
 	}, []);
 
-	return <div className="flex flex-wrap justify-center gap-4 mt-4">{components}</div>;
+	return <div className="flex flex-wrap justify-center gap-4 mt-4 mb-10">{components}</div>;
 };
 
 export default Gallery;

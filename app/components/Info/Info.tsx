@@ -10,6 +10,7 @@ const Info: React.FC<InfoProps> = ({ id, mainColor, accentColor }) => {
 	const style = {
 		backgroundColor: mainColor,
 		color: accentColor,
+		fontFamily: "'Lexend Mega', sans-serif",
 	};
 
 	let content;
@@ -17,16 +18,16 @@ const Info: React.FC<InfoProps> = ({ id, mainColor, accentColor }) => {
 	switch (id) {
 		case 0:
 			content = (
-				<div style={style} className="flex flex-col w-1/4 justify-center items-center p-3">
-					<p className="text-8xl leading-none">24</p>
+				<div style={style} className="lexend-mega-900 flex flex-col w-1/4 justify-center items-center p-3">
+					<p className="text-9xl leading-none">42</p>
 					<p className="text-4xl leading-none">Original</p>
-					<p className="text-2xl leading-none">Photographs</p>
+					<p className="text-xl leading-none">Photographs</p>
 				</div>
 			);
 			break;
 		case 1:
 			content = (
-				<div style={style} className="flex flex-col w-1/4 justify-center items-center p-3">
+				<div style={style} className="lexend-mega-900 flex flex-col w-1/4 justify-center items-center p-3">
 					<p className="text-5xl leading-none">Minted</p>
 					<p className="text-5xl leading-none">as NFTs</p>
 					<p className="text-3xl leading-none">on Berachain</p>
@@ -35,7 +36,7 @@ const Info: React.FC<InfoProps> = ({ id, mainColor, accentColor }) => {
 			break;
 		case 2:
 			content = (
-				<div style={style} className="flex flex-col w-1/4 justify-center items-center p-3">
+				<div style={style} className="lexend-mega-900 flex flex-col w-1/4 justify-center items-center p-3">
 					<p className="text-7xl leading-none">Original</p>
 					<p className="text-6xl leading-none">work by</p>
 					<p className="text-4xl leading-none">Mountain Bear</p>
@@ -44,7 +45,7 @@ const Info: React.FC<InfoProps> = ({ id, mainColor, accentColor }) => {
 			break;
 		case 3:
 			content = (
-				<div style={style} className="flex flex-col w-1/4 justify-center items-start p-3">
+				<div style={style} className="lexend-mega-900 flex flex-col w-1/4 justify-center items-start p-3">
 					<p className="leading-none">In the mountain mist,</p>
 					<p className="leading-none">Bear inhales nature{"'"}s calm breeze,</p>
 					<p className="leading-none">Peace in every puff</p>
@@ -54,7 +55,7 @@ const Info: React.FC<InfoProps> = ({ id, mainColor, accentColor }) => {
 			break;
 		case 4:
 			content = (
-				<div style={style} className="flex flex-col w-1/4 justify-end items-end p-3">
+				<div style={style} className="lexend-mega-900 flex flex-col w-1/4 justify-end items-end p-3">
 					<p className="leading-none">Summit{"'"}s silent song,</p>
 					<p className="leading-none">Solitude whispers wisdom,</p>
 					<p className="leading-none">Soul feasts on the calm.</p>
@@ -64,7 +65,7 @@ const Info: React.FC<InfoProps> = ({ id, mainColor, accentColor }) => {
 			break;
 		case 5:
 			content = (
-				<div style={style} className="flex flex-col w-1/4 justify-center items-center p-3">
+				<div style={style} className="lexend-mega-900 flex flex-col w-1/4 justify-center items-center p-3">
 					<p className="leading-none">River{"'"}s gentle flow,</p>
 					<p className="leading-none">
 						Nature{"'"}s breath, a soul{"'"}s repose,
@@ -76,7 +77,7 @@ const Info: React.FC<InfoProps> = ({ id, mainColor, accentColor }) => {
 			break;
 		case 6:
 			content = (
-				<div style={style} className="flex flex-col w-1/4 justify-end items-end p-3">
+				<div style={style} className="lexend-mega-900 flex flex-col w-1/4 justify-end items-end p-3">
 					<p className="leading-none">Forest{"'"}s emerald heart,</p>
 					<p className="leading-none">Solitude{"'"}s sanctuary,</p>
 					<p className="leading-none">Nature heals, imparts.</p>
@@ -86,7 +87,7 @@ const Info: React.FC<InfoProps> = ({ id, mainColor, accentColor }) => {
 			break;
 		case 7:
 			content = (
-				<div style={style} className="flex flex-col w-1/4 justify-center items-start p-3">
+				<div style={style} className="lexend-mega-900 flex flex-col w-1/4 justify-center items-start p-3">
 					<p className="leading-none">Dawn{"'"}s first light on peaks,</p>
 					<p className="leading-none">Mountains{"'"} solitude beckons,</p>
 					<p className="leading-none">In silence, soul speaks.</p>
@@ -96,7 +97,7 @@ const Info: React.FC<InfoProps> = ({ id, mainColor, accentColor }) => {
 			break;
 		case 8:
 			content = (
-				<div style={style} className="flex flex-col w-1/4 justify-center items-center p-3">
+				<div style={style} className="lexend-mega-900 flex flex-col w-1/4 justify-center items-center p-3">
 					<p className="leading-none">Cascades{"'"} melody,</p>
 					<p className="leading-none">Nature{"'"}s refreshment, pure, clear,</p>
 					<p className="leading-none">Solitude{"'"}s key, free.</p>
@@ -106,7 +107,7 @@ const Info: React.FC<InfoProps> = ({ id, mainColor, accentColor }) => {
 			break;
 		case 9:
 			content = (
-				<div style={style} className="flex flex-col w-1/4 justify-center items-center p-3">
+				<div style={style} className="lexend-mega-900 flex flex-col w-1/4 justify-center items-center p-3">
 					<p className="leading-none">Alpine twilight fades,</p>
 					<p className="leading-none">Solitude in every hue,</p>
 					<p className="leading-none">Nature{"'"}s beauty aids.</p>
@@ -116,7 +117,7 @@ const Info: React.FC<InfoProps> = ({ id, mainColor, accentColor }) => {
 			break;
 		case 10:
 			content = (
-				<div style={style} className="flex flex-col w-1/4 justify-center items-center p-3">
+				<div style={style} className="lexend-mega-900 flex flex-col w-1/4 justify-center items-center p-3">
 					<p className="leading-none">Stars over stone spires,</p>
 					<p className="leading-none">Only in nature{"'"}s embrace,</p>
 					<p className="leading-none">Soul finds what it desires.</p>
@@ -126,7 +127,7 @@ const Info: React.FC<InfoProps> = ({ id, mainColor, accentColor }) => {
 			break;
 		case 11:
 			content = (
-				<div style={style} className="flex flex-col w-1/4 justify-center items-center p-3">
+				<div style={style} className="lexend-mega-900 flex flex-col w-1/4 justify-center items-center p-3">
 					<p className="leading-none">Frost kisses the pine,</p>
 					<p className="leading-none">Mountain{"'"}s breath, a tranquil balm,</p>
 					<p className="leading-none">Solitude divine.</p>
@@ -136,7 +137,7 @@ const Info: React.FC<InfoProps> = ({ id, mainColor, accentColor }) => {
 			break;
 		case 12:
 			content = (
-				<div style={style} className="flex flex-col w-1/4 justify-center items-center p-3">
+				<div style={style} className="lexend-mega-900 flex flex-col w-1/4 justify-center items-center p-3">
 					<p className="leading-none">Path through ancient woods,</p>
 					<p className="leading-none">Solitude{"'"}s journey inward,</p>
 					<p className="leading-none">Nature{"'"}s quiet goods.</p>
@@ -146,7 +147,7 @@ const Info: React.FC<InfoProps> = ({ id, mainColor, accentColor }) => {
 			break;
 		case 13:
 			content = (
-				<div style={style} className="flex flex-col w-1/4 justify-center items-center p-3">
+				<div style={style} className="lexend-mega-900 flex flex-col w-1/4 justify-center items-center p-3">
 					<p className="leading-none">Moonlit valley{"'"}s call,</p>
 					<p className="leading-none">In solitude, find your peace,</p>
 					<p className="leading-none">Nature cradles all.</p>
@@ -156,8 +157,8 @@ const Info: React.FC<InfoProps> = ({ id, mainColor, accentColor }) => {
 			break;
 		default:
 			content = (
-				<div style={style} className="flex flex-col w-1/4 justify-center items-center p-3">
-					<p className="text-4xl leading-none">Info not available</p>
+				<div style={style} className="lexend-mega-900 flex flex-col w-1/4 justify-center items-center p-3">
+					<p className="text-4xl leading-none">;-)</p>
 				</div>
 			);
 	}

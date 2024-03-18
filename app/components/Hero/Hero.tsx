@@ -37,7 +37,7 @@ const Hero: React.FC<HeroProps> = ({ navbarMode }) => {
 			<div className="text-center w-full leading-none">
 				{isSticky && (
 					<>
-						<h1 className={`font-bold text-accent`}>
+						<h1 className={`lexend-mega-900 text-bold text-accent`}>
 							<a className="cursor-pointer" onClick={goBack}>
 								BEARS LOVE MOUNTAINS
 							</a>
@@ -46,8 +46,8 @@ const Hero: React.FC<HeroProps> = ({ navbarMode }) => {
 				)}
 				{!isSticky && (
 					<>
-						<h1 className={`font-bold text-accent`}>BEARS LOVE </h1>
-						<h1 className={`font-bold text-accent`}>MOUNTAINS</h1>
+						<h1 className={`lexend-mega-300 text-bold text-accent`}>BEARS LOVE</h1>
+						<h1 className={`lexend-mega-300 text-bold text-accent`}>MOUNTAINS</h1>
 					</>
 				)}
 			</div>
