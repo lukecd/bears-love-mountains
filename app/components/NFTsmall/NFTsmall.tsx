@@ -13,11 +13,11 @@ const NFTsmall: React.FC<NFTsmallProps> = ({ id, mainColor, accentColor }) => {
 	const showNFT = () => {
 		router.push(`/nft?id=${id}`);
 	};
-	console.log({ accentColor });
+
 	return (
 		<div
-			style={{ backgroundColor: accentColor }}
-			className={`flex flex-col w-1/4 justify-center items-center text-white bg-${accentColor} p-3 pb-5 shadow-md `}
+			style={{ boxShadow: `0 4px 6px ${accentColor}` }}
+			className={`flex flex-col w-1/4 justify-center items-center bg-white p-3 pb-5`}
 		>
 			<img
 				src={`/bearslovemountains-${id + 1}.png`}
@@ -26,10 +26,7 @@ const NFTsmall: React.FC<NFTsmallProps> = ({ id, mainColor, accentColor }) => {
 				onClick={showNFT}
 			/>
 			<div className="w-full mt-1 rounded-md pr-2 pb-1">
-				<h1
-					className={`lexend-mega-500 mt-3 text-right lg:text-xl text-sm leading-none font-bold`}
-					style={{ color: mainColor }}
-				>
+				<h1 className={`lexend-mega-500 mt-3 text-right lg:text-xl text-sm leading-none font-bold text-black`}>
 					Bears Love Mountains #{id}
 				</h1>
 			</div>

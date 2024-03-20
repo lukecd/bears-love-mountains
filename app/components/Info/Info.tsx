@@ -11,6 +11,7 @@ const Info: React.FC<InfoProps> = ({ id, mainColor, accentColor }) => {
 		backgroundColor: mainColor,
 		color: accentColor,
 		fontFamily: "'Lexend Mega', sans-serif",
+		boxShadow: `0 4px 6px ${accentColor}`,
 	};
 
 	let content;

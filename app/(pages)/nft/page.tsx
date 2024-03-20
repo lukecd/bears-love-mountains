@@ -5,8 +5,8 @@ import { Suspense } from "react";
 
 const Page = () => {
 	return (
-		<div className=" bg-accent">
-			{/* <Hero navbarMode={true} /> Pass a prop to indicate navbar mode */}
+		<div className=" bg-white">
+			<Hero navbarMode={true} />{" "}
 			<Suspense>
 				<NFTView />
 			</Suspense>

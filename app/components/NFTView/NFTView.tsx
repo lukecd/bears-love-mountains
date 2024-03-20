@@ -74,7 +74,7 @@ const NFTView = () => {
 	};
 
 	return (
-		<div className="flex flex-col min-h-screen bg-mainBg" style={{ boxShadow: `0 4px 6px ${accentColor}` }}>
+		<div className="flex flex-col min-h-screen" style={{ boxShadow: `0 4px 6px ${accentColor}` }}>
 			{mintSuccess && (
 				<div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex items-center justify-center z-50">
 					<div className="w-96 px-8 py-4 bg-main border-4 border-accent shadow-[8px_8px_0px_rgba(34, 160, 147, 1)]">
@@ -93,9 +93,8 @@ const NFTView = () => {
 				</div>
 			)}
 
-			<Hero navbarMode={true} />
 			<div className="flex-grow pt-24 pb-10 px-4 md:px-0">
-				<div className="max-w-4xl mx-auto bg-white shadow-md rounded-lg overflow-hidden flex flex-col md:flex-row">
+				<div className="max-w-4xl mx-auto bg-white shadow-2xl shadow-main rounded-lg overflow-hidden flex flex-col md:flex-row">
 					<div className="md:w-1/2 p-4">
 						<img
 							src={`/bearslovemountains-${id}.png`}

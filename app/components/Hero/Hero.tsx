@@ -32,11 +32,11 @@ const Hero: React.FC<HeroProps> = ({ navbarMode }) => {
 		<div
 			className={`text-xl lg:text-6xl flex items-center justify-center w-full px-4 py-2 ${
 				isSticky ? "text-xl fixed top-0 z-50" : "relative"
-			} bg-main transition-all duration-500 ease-in-out`}
+			} bg-accent transition-all duration-500 ease-in-out shadow shadow-main rounded-b-xl`}
 		>
 			<div className="text-center w-full leading-none">
 				<>
-					<h1 className={`lexend-mega-300 text-bold text-accent`}>
+					<h1 className={`lexend-mega-300 text-bold text-main`}>
 						<a className="cursor-pointer" onClick={goBack}>
 							BEARS LOVE MOUNTAINS
 						</a>
