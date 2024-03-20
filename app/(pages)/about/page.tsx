@@ -12,7 +12,16 @@ const Page = () => {
 				<br />
 				<br />
 				<br />
-				<br />A collection of original photos shot in the Patagonia region
+				<br />
+				<div className="w-3/4 lexend-mega-300 text-xl text-end">
+					<p className="">Original photographs. Preserved permanently as NFTs.</p>
+					<p className="">Shot in Patagonia. </p>
+					<p className="">The real Patagonia, not the clothing brand.</p>
+					<a className="underline decoration-main" href="https://twitter.com/bearsmountains">
+						{" "}
+						By Mountain Bear
+					</a>
+				</div>
 			</div>
 		</div>
 	);
