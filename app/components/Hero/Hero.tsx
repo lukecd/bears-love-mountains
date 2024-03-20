@@ -25,8 +25,8 @@ const Hero: React.FC<HeroProps> = ({ navbarMode }) => {
 		}
 	}, [navbarMode]);
 
-	const goBack = () => {
-		router.back();
+	const goHome = () => {
+		router.push("/");
 	};
 
 	return (
@@ -37,7 +37,7 @@ const Hero: React.FC<HeroProps> = ({ navbarMode }) => {
 		>
 			<div className="text-center w-full leading-none">
 				<h1 className={`lexend-mega-300 text-bold text-main`}>
-					<a className="cursor-pointer" onClick={goBack}>
+					<a className="cursor-pointer" onClick={goHome}>
 						BEARS LOVE MOUNTAINS
 					</a>
 				</h1>
