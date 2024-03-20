@@ -14,13 +14,33 @@ const Page = () => {
 				<br />
 				<br />
 				<div className="w-3/4 lexend-mega-300 text-xl text-end">
-					<p className="">Original photographs. Preserved permanently as NFTs.</p>
-					<p className="">Shot in Patagonia. </p>
-					<p className="">The real Patagonia, not the clothing brand.</p>
-					<a className="underline decoration-main" href="https://twitter.com/bearsmountains">
-						{" "}
-						By Mountain Bear
-					</a>
+					<p className="">Original photographs. Shot in Patagonia. </p>
+					<p className="">(The mountains, not the clothing brand.)</p>
+					<p className="">
+						Preserved permanently as NFTs using{" "}
+						<a className="underline decoration-main" href="https://irys.xyz">
+							{" "}
+							Irys
+						</a>
+						.
+					</p>
+				</div>
+				<div className="w-3/4 lexend-mega-300 text-xl text-end">
+					<p className="">
+						Minted on{" "}
+						<a className="underline decoration-main" href="https://berachain.com">
+							{" "}
+							Berachain
+						</a>
+						.
+					</p>
+					<p className="mt-5 text-2xl">
+						by
+						<a className="underline decoration-accent" href="https://twitter.com/bearsmountains">
+							{" "}
+							Mountain Bear
+						</a>
+					</p>
 				</div>
 			</div>
 		</div>
