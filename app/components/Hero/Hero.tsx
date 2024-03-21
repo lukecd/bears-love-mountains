@@ -60,7 +60,7 @@ const Hero: React.FC<HeroProps> = ({ navbarMode }) => {
 							Your NFTs
 						</a>
 						<a href="/staking" className="block px-4 py-2 text-main text-base">
-							Your NFTs
+							Staking
 						</a>
 					</div>
 				)}
