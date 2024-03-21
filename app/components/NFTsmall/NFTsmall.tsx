@@ -17,7 +17,7 @@ const NFTsmall: React.FC<NFTsmallProps> = ({ id, mainColor, accentColor }) => {
 	return (
 		<div
 			style={{ boxShadow: `0 4px 6px ${accentColor}` }}
-			className={`flex flex-col w-1/4 justify-center items-center bg-white p-3 lg:pb-5 pb-1`}
+			className={`flex flex-col w-full md:w-1/3 lg:w-1/4 justify-center items-center bg-white p-3 lg:pb-5 pb-1`}
 		>
 			<img
 				src={`/bearslovemountains-${id + 1}.png`}
