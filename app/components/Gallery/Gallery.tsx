@@ -11,6 +11,7 @@ interface GalleryProps {
 interface NFTMetadata {
 	image: string;
 	name: string;
+	animation_url: string;
 }
 
 const Gallery: React.FC<GalleryProps> = ({ showAll }) => {
@@ -24,6 +25,8 @@ const Gallery: React.FC<GalleryProps> = ({ showAll }) => {
 			const nfts = await response.json();
 
 			const items: React.ReactNode[] = await Promise.all(
+				//@ts-ignore
+
 				nfts.map(async (nft, index) => {
 					const metadataResponse = await fetch(nft.metadataUrl);
 					const metadata: NFTMetadata = await metadataResponse.json();
@@ -32,6 +35,7 @@ const Gallery: React.FC<GalleryProps> = ({ showAll }) => {
 						<NFTsmall
 							key={`nft-${index}`}
 							imageUrl={metadata.image}
+							//@ts-ignore
 							animationUrl={metadata.animation_url}
 							id={index}
 							mainColor={mainColors[colorIndex]}

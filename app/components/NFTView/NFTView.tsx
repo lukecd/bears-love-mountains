@@ -43,7 +43,7 @@ const InfoBox: React.FC<InfoBoxProps> = ({ label, value, mainColor, accentColor 
 		</div>
 	);
 };
-
+//@ts-ignore
 const MountainTripLoader = ({ data }) => {
 	useEffect(() => {
 		const loadHtmlContent = async () => {
