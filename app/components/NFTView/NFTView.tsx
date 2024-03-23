@@ -44,8 +44,38 @@ const InfoBox: React.FC<InfoBoxProps> = ({ label, value, mainColor, accentColor 
 	);
 };
 
+const MountainTripLoader = ({ data }) => {
+	useEffect(() => {
+		const loadHtmlContent = async () => {
+			try {
+				console.log(`https://gateway.irys.xyz/${data}`);
+				const response = await fetch(`https://gateway.irys.xyz/${data}`);
+				const html = await response.text();
+
+				// Create an iframe and write the HTML content to it
+				const iframe = document.createElement("iframe");
+				iframe.style.width = "400px";
+				iframe.style.height = "400px";
+				iframe.style.border = "none";
+				iframe.style.overflow = "hidden";
+
+				document.getElementById("iframeContainer")?.appendChild(iframe);
+				iframe.contentWindow?.document.open();
+				iframe.contentWindow?.document.write(html);
+				iframe.contentWindow?.document.close();
+			} catch (error) {
+				console.error("Failed to load HTML content:", error);
+			}
+		};
+
+		loadHtmlContent();
+	}, []);
+
+	return <div id="iframeContainer" className="w-[400px] h-[400px] overflow-y-hidden"></div>;
+};
+
 const NFTView = () => {
-	const [id, setId] = useState(0);
+	const [data, setData] = useState<string | null>(null);
 	const [name, setName] = useState("");
 	const [symbol, setSymbol] = useState("");
 	const [price, setPrice] = useState(0);
@@ -62,11 +92,11 @@ const NFTView = () => {
 
 	useEffect(() => {
 		// Simulate fetching data
-		setSymbol("BLUVM");
+		setSymbol("MNTN");
 		setPrice(1);
-		const idParam = parseInt(searchParams.get("id") || "0") + 1;
-		setId(idParam);
-		setName(`Bears Love Mountains #${idParam}`);
+		const dataParam = searchParams.get("data");
+		setData(dataParam);
+		setName(`Bears Love Mountains #42`);
 	}, []);
 
 	const doMint = () => {
@@ -96,12 +126,13 @@ const NFTView = () => {
 			<div className="flex-grow pt-24 pb-10 px-4 md:px-0">
 				<div className="max-w-4xl mx-auto bg-white shadow-2xl shadow-main rounded-lg overflow-hidden flex flex-col md:flex-row">
 					<div className="md:w-1/2 p-4">
-						<img
+						{/* <img
 							src={`/bearslovemountains-${id}.png`}
 							alt={name}
 							className="h-auto mx-auto rounded-lg"
 							style={{ border: `4px solid ${mainColor}`, boxShadow: `2px 2px ${accentColor}` }}
-						/>
+						/> */}
+						{data && <MountainTripLoader data={data} />}
 					</div>
 					<div className="md:w-1/2 p-4 flex flex-col justify-end">
 						<InfoBox label="Name" value={name} mainColor={mainColor} accentColor={accentColor} />
